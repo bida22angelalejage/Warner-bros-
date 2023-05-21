@@ -1,0 +1,539 @@
+/* Global styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+ 
+}
+
+/* Header styles */
+header {
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+  
+ 
+}
+
+
+
+.logo a {
+	color: #fff;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.menu ul {
+	display: flex;
+	list-style: none;
+	margin-left: 40px;
+}
+
+.menu li {
+	margin-right: 20px;
+}
+
+.menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.search-box {
+	display: flex;
+	align-items: center;
+}
+
+.search-box input[type="text"] {
+	padding: 8px 12px;
+	border: none;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.search-box button[type="submit"] {
+  display: flex;
+	padding: 8px 20px;
+	border: none;
+	border-radius: 20px;
+	background-color: #fff;
+	color: #333;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+/* Main styles */
+main {
+	margin-top: 80px;
+	padding: 60px;
+  
+}
+
+/* Footer styles */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+    list-style: none;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555;
+  }
+
+  /* Hero section */
+
+  .hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+  }
+  
+  .hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #c00;
+  }
+  
+  /* Features section */
+  .features {
+    background-color: #f0f0f0;
+    padding: 100px;
+  }
+  .features h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+  .feature-item {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .feature-item i {
+    font-size: 3em;
+    margin-right: 30px;
+  }
+  .feature-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  .feature-item p {
+    font-size: 1.2em;
+  }
+  
+  /* Testimonial section */
+  .testimonial {
+    background-color: #fff;
+    padding: 100px;
+    text-align: center;
+  }
+  .testimonial h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+  .testimonial-item {
+    margin-bottom: 50px;
+  }
+  .testimonial-item p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  .testimonial-item .author {
+    font-size: 1.2em;
+  }
+  
+  .collections {
+    padding: 50px;
+  }
+  
+  .collections h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .collection {
+    margin-bottom: 40px;
+  }
+  
+  .collection h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .collection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .collection li {
+    width: 33.33%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .collection li img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .collection li p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .collection li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .collection li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Movie Details section */
+.movie-details {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.movie-details h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.movie-details img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.movie-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.movie-details .description {
+  margin-bottom: 20px;
+}
+
+.movie-details .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.movie-details .btn:hover {
+  background-color: #c00;
+}
+
+/* Cast section */
+.cast {
+  margin-bottom: 30px;
+}
+
+.cast h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cast ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cast li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Reviews section */
+.reviews {
+  margin-bottom: 30px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reviews .review {
+  margin-bottom: 20px;
+}
+
+.reviews .review p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.reviews .review .author {
+  font-style: italic;
+}
+
+/* Show Details section */
+.show-details {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.show-details h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.show-details img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.show-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.show-details .description {
+  margin-bottom: 20px;
+}
+
+.show-details .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.show-details .btn:hover {
+  background-color: #c00;
+}
+
+/* Cast section */
+.cast {
+  margin-bottom: 30px;
+}
+
+.cast h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cast ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cast li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Reviews section */
+.reviews {
+  margin-bottom: 30px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reviews .review {
+  margin-bottom: 20px;
+}
+
+.reviews .review p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.reviews .review .author {
+  font-style: italic;
+}
+
+/* Game Details section */
+.game-details {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-details h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.game-details img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.game-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.game-details .description {
+  margin-bottom: 20px;
+}
+
+.game-details .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.game-details .btn:hover {
+  background-color: #c00;
+}
+
+/* Features section */
+.features {
+  margin-bottom: 30px;
+}
+
+.features h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.features ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.features li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Reviews section */
+.reviews {
+  margin-bottom: 30px;
+}
+
+.reviews h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.reviews .review {
+  margin-bottom: 20px;
+}
+
+.reviews .review p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.reviews .review .author {
+  font-style: italic;
+}
+
+  
